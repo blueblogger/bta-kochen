@@ -8,7 +8,8 @@ body {
   font-size: 100%;
 }
 #navi-header {
-  background-color: rgb(40,44,52);
+  background-color: rgb(140,144,152);
+  height: 60px;
 }
 .wrapper {
   width: 90%;
@@ -19,3 +20,55 @@ ul {
   padding-left: 0;
   margin: 0;
 }
+/*   Kommentar  */
+#navi-header a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.8s ease-in color;
+}
+#navi-header a:hover {
+  color: rgb(69,139,116);
+}
+#menu {
+  display: none;
+}
+#logo {
+margin-top: 10px;
+}
+#burger {
+background: transparent;
+color: #fff;
+float: right;
+margin-top: 20px;
+}
+#menu.show {
+  display: block;
+  background: rgb(140,144,152);
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  text-align: center;
+}
+
+
+
+@media (min-width: 1024px) {
+  #navi-header li{
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  #menu {
+  float: right;
+  display: block;
+  margin-top: 19px;
+  }
+  #burger {
+  display: none;
+  }
+}
+/**   mehrere Zeilen
+*
+**/
