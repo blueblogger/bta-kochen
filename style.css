@@ -49,7 +49,6 @@ float: right;
 margin-top: 11px;
 border: none;
 font-size: 2rem;
-
 }
 #menu.show {
   display: block;
@@ -60,8 +59,6 @@ font-size: 2rem;
   left: 0;
   text-align: center;
 }
-
-
 
 @media (min-width: 1024px) {
   #navi-header li{
@@ -93,7 +90,7 @@ font-size: 2rem;
     text-align: center;
     text-shadow: 2px 3px 2px rgba(0, 0, 0, 1);
   }
-  .hero-text a{
+  .hero-text a, .card a{
     color: #fff;
     text-decoration: none;
     background-color: rgb(102,205,170);
@@ -106,12 +103,72 @@ font-size: 2rem;
     -webkit-box-shadow: -1px 0px 22px 0px #FFF8B0;
     box-shadow: -1px 0px 22px 0px #FFF8B0;
   }
-.hero-text a:hover {
+.hero-text a:hover, .card a:hover {
     background: rgb(69,139,116);
   }
 
+.border {
+    /*border: 4px solid #fff;
+    border-radius: 5px;*/
+    border-top: none;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    padding: 2rem;
+  }
+
+main img {
+    width: 100%;
+    display: block;
+  }
+.card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-/**   mehrere Zeilen
-*
-**/
+h3 {
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  /*margin-top: 20px;*/
+}
+.border p {
+  padding-top: : 0px;
+}
+.border a {
+display: block;
+box-shadow: 0px 0px 022px 10px rgba(0, 0, 0, 0.50);
+
+}
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+
+@media (min-width: 1024px) {
+.flexbox	{
+	display: flex;
+	/*http://flexbox.malven.co/*/
+	/*flexbox+playground, http://the-echoplex.net/flexyboxes/ */
+	justify-content: space-around;
+	align-items: stretch ;
+	flex-direction: row;
+	}
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  #rezepte{
+    width: 66.666%;
+  }
+  #sidebar{
+    width: 33.333%;
+    background: yellow;
+  }
+}
