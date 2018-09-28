@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /*    * gilt für alle Elemente   */
 }
 body {
   margin: 0;
@@ -7,10 +8,14 @@ body {
   line-height: 1.4;
   font-size: 100%;
 }
+/*wurde im html hier definiert
+<header id="navi-header">, daher Prefix #*/
 #navi-header {
   background-color: rgb(140,144,152);
   height: 60px;
 }
+/*wurde im html so definiert
+<div class="wrapper">, daher Prefix .  */
 .wrapper {
   width: 90%;
   margin: auto;
@@ -41,7 +46,10 @@ margin-top: 10px;
 background: transparent;
 color: #fff;
 float: right;
-margin-top: 20px;
+margin-top: 11px;
+border: none;
+font-size: 2rem;
+
 }
 #menu.show {
   display: block;
@@ -69,6 +77,41 @@ margin-top: 20px;
   display: none;
   }
 }
+/*hero section*/
+.hero {
+  background-image: url(img/intro.jpg);
+  /*vh viewport*/
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  display: flex;
+   }
+  .hero-text {
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 1);
+  }
+  .hero-text a{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(102,205,170);
+    padding: 1rem;
+    border-radius: 5px;
+    /*border-radius: 50%;
+    border-radius: 50px;*/
+    border: 2px solid #fff;
+    transition: 0.8s;
+    -webkit-box-shadow: -1px 0px 22px 0px #FFF8B0;
+    box-shadow: -1px 0px 22px 0px #FFF8B0;
+  }
+.hero-text a:hover {
+    background: rgb(69,139,116);
+  }
+
+}
+
 /**   mehrere Zeilen
 *
 **/
